@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRM AutoSelect Vega</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='10' fill='%23d9902a'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='%230f1f33' font-family='Arial' font-weight='bold'>AV</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">AV</div>
+      <div><strong>AutoSelect Vega</strong><small>Gestión comercial</small></div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="sidebar-foot">
+      <button id="btnReset" class="btn ghost sm" type="button"></button>
+      <small>AutoSelect Vega CRM · v1.0<br>Entorno de demostración · datos ficticios</small>
+    </div>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <div><h1 id="title">Panel</h1><div class="date" id="today"></div></div>
+      <div class="gsearch">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>
+        <input id="gs" type="search" placeholder="Buscar cliente, matrícula, factura…" autocomplete="off" aria-label="Buscar en todo el CRM">
+        <kbd>Ctrl K</kbd>
+        <div id="gsr" class="gsr" role="listbox"></div>
+      </div>
+      <label class="soy">Usuario
+        <select id="soy">
+          <option value="Todos">Todos los puestos</option>
+          <option value="Comprador">Compras / Peritaje</option>
+          <option value="Comercial">Comercial</option>
+          <option value="Financiero">Administración / Legal</option>
+        </select>
+      </label>
+    </header>
+    <section id="view"></section>
+  </main>
+
+  <dialog id="modal"><form id="modalForm" novalidate></form></dialog>
+  <dialog id="dlg2" class="small-dlg"></dialog>
+  <div id="toast" role="status"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

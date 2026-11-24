@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Mapa de sistemas · CRM AutoSelect Vega</title>
+<style>
+  body { margin: 0; background: #ffffff; font-family: "Segoe UI", Arial, sans-serif; color: #17202b; }
+  .wrap { width: 1280px; height: 640px; position: relative; }
+  h1 { position: absolute; left: 40px; top: 24px; margin: 0; font-size: 24px; color: #16293f; }
+  .col-t { position: absolute; top: 76px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #6b7686; }
+  .box { position: absolute; width: 300px; height: 92px; border: 1.5px solid #c9d1da; background: #f6f8fa; border-radius: 6px; box-sizing: border-box; padding: 14px 18px; }
+  .box b { display: block; font-size: 17px; color: #16293f; }
+  .box span { display: block; font-size: 13px; color: #4a5666; margin-top: 4px; line-height: 1.35; }
+  .crm { position: absolute; left: 490px; top: 214px; width: 300px; height: 212px; background: #16293f; color: #fff; border-radius: 8px; padding: 22px 24px; box-sizing: border-box; box-shadow: 0 10px 30px rgba(15,31,51,.25); }
+  .crm .logo { width: 44px; height: 44px; background: #d9902a; color: #0f1f33; font-weight: 800; display: grid; place-items: center; border-radius: 6px; font-size: 17px; }
+  .crm b { display: block; font-size: 22px; margin-top: 12px; }
+  .crm span { display: block; font-size: 13px; color: #c8d4e2; margin-top: 6px; line-height: 1.5; }
+  svg { position: absolute; left: 0; top: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Mapa de sistemas: 4 fuentes alimentan el CRM y el CRM alimenta 4 sistemas</h1>
+  <div class="col-t" style="left:40px">Fuentes que lo alimentan</div>
+  <div class="col-t" style="left:940px">Sistemas que reciben datos</div>
+
+  <div class="box" style="left:40px;top:108px"><b>Subastas B2B</b><span>Autorola, Auto1, BCA, Leasys, Ayvens, Arval: vehículos, coste y bastidor</span></div>
+  <div class="box" style="left:40px;top:228px"><b>coches.net</b><span>Anuncios del stock y solicitudes de compradores (leads)</span></div>
+  <div class="box" style="left:40px;top:348px"><b>Web propia</b><span>Catálogo, reserva online y señal de 300 € con tarjeta</span></div>
+  <div class="box" style="left:40px;top:468px"><b>Tienda, teléfono y WhatsApp</b><span>Visitas, llamadas, pruebas de conducción</span></div>
+
+  <div class="crm"><div class="logo">AV</div><b>CRM AutoSelect Vega</b><span>Clientes · Vehículos · Ventas<br>Finanzas · Calendario · Análisis</span></div>
+
+  <div class="box" style="left:940px;top:108px"><b>Facturación y cobros</b><span>Facturas REBU, cobro por transferencia o tarjeta, impagos</span></div>
+  <div class="box" style="left:940px;top:228px"><b>DGT y gestoría</b><span>Transferencia de titularidad, contabilidad (exportación CSV)</span></div>
+  <div class="box" style="left:940px;top:348px"><b>Calendario y avisos</b><span>Entregas, vencimientos, fin de garantía, subastas</span></div>
+  <div class="box" style="left:940px;top:468px"><b>Análisis de mercado</b><span>Qué comprar y a qué precio en la próxima subasta</span></div>
+
+  <svg width="1280" height="640" viewBox="0 0 1280 640" aria-hidden="true">
+    <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6b7686"/></marker>
+      <marker id="b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10 0L0 5L10 10z" fill="#6b7686"/></marker></defs>
+    <g stroke="#6b7686" stroke-width="2" fill="none">
+      <path d="M340 154 L486 262" marker-end="url(#a)"/>
+      <path d="M340 274 L486 302" marker-end="url(#a)"/>
+      <path d="M340 394 L486 338" marker-end="url(#a)"/>
+      <path d="M340 514 L486 378" marker-end="url(#a)"/>
+      <path d="M794 262 L936 154" marker-start="url(#b)" marker-end="url(#a)"/>
+      <path d="M794 302 L936 274" marker-end="url(#a)"/>
+      <path d="M794 338 L936 394" marker-end="url(#a)"/>
+      <path d="M794 378 L936 514" marker-end="url(#a)"/>
+    </g>
+    <text x="640" y="470" text-anchor="middle" font-size="13" fill="#4a5666" font-family="Segoe UI, Arial">Publicado en Vercel desde GitHub · datos de ejemplo en el código</text>
+  </svg>
+</div>
+</body>
+</html>
